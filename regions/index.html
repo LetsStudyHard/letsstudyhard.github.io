@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>지역별 과외 안내 | 브레인과외</title>
+<meta name="description" content="전국 시/도별 브레인과외 1:1 맞춤 과외 안내">
+<link rel="icon" type="image/png" href="../assets/logo.png">
+<meta name="theme-color" content="#0f9682">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#fff;color:#16211f}
+  .wrap{max-width:900px;margin:0 auto;padding:24px}
+  header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+  header .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:17px;text-decoration:none;color:#16211f}
+  header .logo img{height:24px}
+  header .call{background:#0f9682;color:#fff;font-weight:700;font-size:13px;padding:9px 16px;border-radius:999px;text-decoration:none}
+  .kicker{display:inline-block;background:#e6f5f2;color:#0b7364;font-size:12.5px;font-weight:800;padding:5px 12px;border-radius:999px;margin-bottom:10px}
+  h1{font-size:26px;font-weight:800;margin-bottom:8px}
+  p.sub{color:#3d4d4a;margin-bottom:24px;font-size:14.5px}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+  .region-tab{border:1.5px solid #e2ece9;background:#fff;color:#3d4d4a;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px;cursor:pointer}
+  .region-tab.active{background:#0f9682;color:#fff;border-color:#0f9682}
+  .area-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .area-card{background:#f4f8f7;border-radius:12px;padding:16px 12px;text-align:center;text-decoration:none;color:#16211f;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;gap:6px}
+  .area-card .arrow{color:#9aa;font-weight:400;font-size:12px}
+  .soon{background:#f4f8f7;border-radius:14px;padding:40px 20px;text-align:center;color:#3d4d4a;font-size:14.5px;line-height:1.8}
+  .soon a{color:#0b7364;font-weight:700}
+  a.home{display:inline-block;margin-top:24px;color:#0b7364;font-weight:700;text-decoration:none}
+  @media(max-width:700px){.area-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="브레인과외">브레인과외</a>
+    <a class="call" href="tel:01094687739">📞 전화상담</a>
+  </header>
+  <div class="kicker">지역 선택</div>
+  <h1>원하는 지역을 선택하세요</h1>
+  <p class="sub">지역 버튼을 클릭하면 해당 지역 상세 페이지가 나타납니다.</p>
+  <div class="tabs"><button class="region-tab active" data-panel="panel-seoul">서울</button><button class="region-tab " data-panel="panel-gyeonggi">경기도</button><button class="region-tab " data-panel="panel-incheon">인천</button><button class="region-tab " data-panel="panel-busan">부산</button><button class="region-tab " data-panel="panel-daegu">대구</button><button class="region-tab " data-panel="panel-gwangju">광주</button><button class="region-tab " data-panel="panel-daejeon">대전</button><button class="region-tab " data-panel="panel-ulsan">울산</button><button class="region-tab " data-panel="panel-sejong">세종</button><button class="region-tab " data-panel="panel-gangwon">강원도</button><button class="region-tab " data-panel="panel-chungbuk">충청북도</button><button class="region-tab " data-panel="panel-chungnam">충청남도</button><button class="region-tab " data-panel="panel-jeonbuk">전라북도</button><button class="region-tab " data-panel="panel-jeonnam">전라남도</button><button class="region-tab " data-panel="panel-gyeongbuk">경상북도</button><button class="region-tab " data-panel="panel-gyeongnam">경상남도</button><button class="region-tab " data-panel="panel-jeju">제주도</button></div>
+  <div class="region-panel" id="panel-seoul" style="display:block"><div class="area-grid"><a class="area-card" href="seoul/gangnam.html">강남구<span class="arrow">→</span></a><a class="area-card" href="seoul/gangdong.html">강동구<span class="arrow">→</span></a><a class="area-card" href="seoul/gangbuk.html">강북구<span class="arrow">→</span></a><a class="area-card" href="seoul/gangseo.html">강서구<span class="arrow">→</span></a><a class="area-card" href="seoul/gwanak.html">관악구<span class="arrow">→</span></a><a class="area-card" href="seoul/gwangjin.html">광진구<span class="arrow">→</span></a><a class="area-card" href="seoul/guro.html">구로구<span class="arrow">→</span></a><a class="area-card" href="seoul/geumcheon.html">금천구<span class="arrow">→</span></a><a class="area-card" href="seoul/nowon.html">노원구<span class="arrow">→</span></a><a class="area-card" href="seoul/dobong.html">도봉구<span class="arrow">→</span></a><a class="area-card" href="seoul/dongdaemun.html">동대문구<span class="arrow">→</span></a><a class="area-card" href="seoul/dongjak.html">동작구<span class="arrow">→</span></a><a class="area-card" href="seoul/mapo.html">마포구<span class="arrow">→</span></a><a class="area-card" href="seoul/seodaemun.html">서대문구<span class="arrow">→</span></a><a class="area-card" href="seoul/seocho.html">서초구<span class="arrow">→</span></a><a class="area-card" href="seoul/seongdong.html">성동구<span class="arrow">→</span></a><a class="area-card" href="seoul/seongbuk.html">성북구<span class="arrow">→</span></a><a class="area-card" href="seoul/songpa.html">송파구<span class="arrow">→</span></a><a class="area-card" href="seoul/yangcheon.html">양천구<span class="arrow">→</span></a><a class="area-card" href="seoul/yeongdeungpo.html">영등포구<span class="arrow">→</span></a><a class="area-card" href="seoul/yongsan.html">용산구<span class="arrow">→</span></a><a class="area-card" href="seoul/eunpyeong.html">은평구<span class="arrow">→</span></a><a class="area-card" href="seoul/jongno.html">종로구<span class="arrow">→</span></a><a class="area-card" href="seoul/jung.html">중구<span class="arrow">→</span></a><a class="area-card" href="seoul/jungnang.html">중랑구<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-gyeonggi" style="display:none"><div class="area-grid"><a class="area-card" href="city/suwon.html">수원과외<span class="arrow">→</span></a><a class="area-card" href="city/seongnam.html">성남과외<span class="arrow">→</span></a><a class="area-card" href="city/yongin.html">용인과외<span class="arrow">→</span></a><a class="area-card" href="city/goyang.html">고양과외<span class="arrow">→</span></a><a class="area-card" href="city/hwaseong.html">화성과외<span class="arrow">→</span></a><a class="area-card" href="city/ansan.html">안산과외<span class="arrow">→</span></a><a class="area-card" href="city/anyang.html">안양과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-incheon" style="display:none"><div class="area-grid"><a class="area-card" href="city/incheon.html">인천과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-busan" style="display:none"><div class="area-grid"><a class="area-card" href="city/busan.html">부산과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-daegu" style="display:none"><div class="area-grid"><a class="area-card" href="city/daegu.html">대구과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-gwangju" style="display:none"><div class="area-grid"><a class="area-card" href="city/gwangju.html">광주과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-daejeon" style="display:none"><div class="area-grid"><a class="area-card" href="city/daejeon.html">대전과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-ulsan" style="display:none"><div class="area-grid"><a class="area-card" href="city/ulsan.html">울산과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-sejong" style="display:none"><div class="soon">아직 준비 중인 지역이에요. 곧 만나요! 📍<br><a href="../index.html">홈으로 돌아가기</a></div></div><div class="region-panel" id="panel-gangwon" style="display:none"><div class="soon">아직 준비 중인 지역이에요. 곧 만나요! 📍<br><a href="../index.html">홈으로 돌아가기</a></div></div><div class="region-panel" id="panel-chungbuk" style="display:none"><div class="area-grid"><a class="area-card" href="city/cheongju.html">청주과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-chungnam" style="display:none"><div class="area-grid"><a class="area-card" href="city/cheonan.html">천안과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-jeonbuk" style="display:none"><div class="area-grid"><a class="area-card" href="city/jeonju.html">전주과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-jeonnam" style="display:none"><div class="soon">아직 준비 중인 지역이에요. 곧 만나요! 📍<br><a href="../index.html">홈으로 돌아가기</a></div></div><div class="region-panel" id="panel-gyeongbuk" style="display:none"><div class="area-grid"><a class="area-card" href="city/pohang.html">포항과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-gyeongnam" style="display:none"><div class="area-grid"><a class="area-card" href="city/changwon.html">창원과외<span class="arrow">→</span></a><a class="area-card" href="city/gimhae.html">김해과외<span class="arrow">→</span></a></div></div><div class="region-panel" id="panel-jeju" style="display:none"><div class="soon">아직 준비 중인 지역이에요. 곧 만나요! 📍<br><a href="../index.html">홈으로 돌아가기</a></div></div>
+  <a class="home" href="../index.html">← 브레인과외 홈으로</a>
+</div>
+<script>
+document.querySelectorAll('.region-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.region-panel').forEach(p => p.style.display = 'none');
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.panel).style.display = 'block';
+  });
+});
+</script>
+</body>
+</html>
